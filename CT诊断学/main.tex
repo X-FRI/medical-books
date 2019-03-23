@@ -21,13 +21,14 @@
 }{}
 
 \usepackage{xcolor}
+\usepackage{subfig}
 \usepackage{xurl} % add URL line breaks if available
 \usepackage{bookmark}
 \usepackage[version=4]{mhchem}
 \usepackage{hyperref}
 \usepackage{placeins}
 \hypersetup{
-  pdftitle={急诊内科学},
+  pdftitle={CT诊断学},
   pdfauthor={github},
   pdfborder={0 0 0},
   breaklinks=true,
@@ -105,28 +106,22 @@
   section = {
     name
     = {第,节},
-    number = \arabic{section},
-  },
-  subsection = {
-    name 
-    = {},
-    titleformat = \subsectiontitleformat,
-    number = {}
+    number = \chinese{section},
   },
   subsubsection = {
     name 
-    = {,、},
+    = {（,）},
     number = \chinese{subsubsection}
   },
-  paragraph = {
-    name
-    = {,.},
-    number = \arabic{paragraph},
+  subsection = {
+    name 
+    = {,、},
+    number = \chinese{subsection}
   }
 }
 
 
-\title{急诊内科学}
+\title{CT诊断学}
 \author{github \\ 项目主页：\url{https://github.com/scienceasdf/medical-books}\\ 新书下载：\url{https://github.com/scienceasdf/medical-books/releases/latest}}
 
 
@@ -134,28 +129,36 @@
 \maketitle
 \frontmatter
 {
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \addcontentsline{toc}{chapter}{目录}
 }
 \newpage
 
 \mainmatter
-\input{content/part01.tex}
-\input{content/part02.tex}
-\input{content/part03.tex}
-\input{content/part04.tex}
-\input{content/part05.tex}
-\input{content/part06.tex}
-\input{content/part07.tex}
-\input{content/part08.tex}
-\input{content/part09.tex}
-\input{content/part10.tex}
-\input{content/part11.tex}
-\input{content/part12.tex}
-\input{content/part13.tex}
-\input{content/part14.tex}
-\input{content/part15.tex}
-\input{content/part16.tex}
-\input{content/part17.tex}
+\input{content/chap01.tex}
+\input{content/chap02.tex}
+\input{content/chap03.tex}
+\input{content/chap04.tex}
+\input{content/chap05.tex}
+\input{content/chap06.tex}
+\input{content/chap07.tex}
+\input{content/chap08.tex}
+\input{content/chap09.tex}
+\input{content/chap10.tex}
+\input{content/chap11.tex}
+\input{content/chap12.tex}
+\input{content/chap13.tex}
+\input{content/chap14.tex}
+\input{content/chap15.tex}
+\input{content/chap16.tex}
+\input{content/chap17.tex}
+\input{content/chap18.tex}
+\input{content/chap19.tex}
+\input{content/chap20.tex}
+\input{content/chap21.tex}
+\input{content/chap22.tex}
+\input{content/chap23.tex}
+\appendix
+\input{content/appendix.tex}
 \end{document}
