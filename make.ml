@@ -31,8 +31,10 @@ let clean bookname =
 	Sys.command (Format.sprintf "rm -f %s.*" bookname) |> ignore
 
 let usage () = {|
-	o- 编译特定书籍: `./compile 书名`
-	o- 编译所有书籍: `./compile all`
+	o- 编译特定书籍: `./make.ml 书名`
+	o- 编译所有书籍: `./make.ml all`
+	o- 清空编译结果: `./make.ml clean 书名`
+	o- 清空所有编译结果: `./make.ml clean all`
 |} |> print_endline
 
 let _ = 

@@ -1,17 +1,46 @@
 
 <div align="center">
 
-# MEDICAL BOOKs
-
-*LaTeX写的中文开源医学教材*
+# LaTeX写的中文开源医学教材
 
 </div>
 
-## COMPILE
+## 依赖
+- lmodern
+- amssymb, amsmath
+- ifxetex, ifluatex
+- unicode-math
+- xcolor
+- xurl
+- bookmark
+- hyperref
+- placeins
+- longtable,booktabs
+- graphicx,grffile
+- framed
+- multirow
+- ctex
+- rotating
+- tablefootnote
+- caption
+- geometry
 
-- 使用 `xelatex` 编译
+## 编译
+> 本项目的构建脚本使用 [ocaml](ocaml.org) 编写
 
-## PLAN
+- 编译特定书籍: `./make.ml 书名`
+- 编译所有书籍: `./make.ml all`
+- 清空编译结果: `./make.ml clean 书名`
+- 清空所有编译结果: `./make.ml clean all`
+
+### 自定义编译工具
+
+在 [./make.ml](./make.ml) 中设置latex的值:
+```ocaml
+let latex = "xelatex"
+```
+
+## 计划
 - [x] 精神病学
 - [x] 临床药物治疗学
 - [x] 病理学
