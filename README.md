@@ -25,6 +25,10 @@
 - caption
 - geometry
 
+### 字体
+本项目字体使用(仓耳明黑)[http://tsanger.cn/product/352]的W06, W07号.
+字体随项目放置在 [fonts](./fonts/) 目录下, 请安装后再编译本项目.
+
 ## 编译
 > 本项目的构建脚本使用 [ocaml](ocaml.org) 编写
 
