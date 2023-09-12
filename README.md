@@ -3,35 +3,19 @@
 
 # LaTeX写的中文开源医学教材
 
-</div>
-
-## 依赖
-- lmodern
-- amssymb, amsmath
-- ifxetex, ifluatex
-- unicode-math
-- xcolor
-- xurl
-- bookmark
-- hyperref
-- placeins
-- longtable,booktabs
-- graphicx,grffile
-- framed
-- multirow
-- ctex
-- rotating
-- tablefootnote
-- caption
-- geometry
-
-### 字体
-本项目字体使用(仓耳明黑)[http://tsanger.cn/product/352]的W06, W07号.
+本项目字体使用 [仓耳明黑](http://tsanger.cn/product/352) 的W06, W07号.
 字体随项目放置在 [fonts](./fonts/) 目录下, 请安装后再编译本项目.
 
-## 编译
+</div>
+
+## 使用
 > 本项目的构建脚本使用 [ocaml](ocaml.org) 编写
 
+### LaTeX依赖
+
+lmodern, amssymb, amsmath, ifxetex, ifluatex, unicode-math, xcolor, xurl, bookmark, hyperref, placeins, longtable,booktabs, graphicx,grffile, framed, multirow, ctex, rotating, tablefootnote, caption, geometry.
+
+### 编译
 - 编译特定书籍: `./make.ml 书名`
 - 编译所有书籍: `./make.ml all`
 - 清空编译结果: `./make.ml clean 书名`
@@ -65,4 +49,3 @@ let latex = "xelatex"
 - [ ] 内科治疗指南
 - [ ] 临床药物速查手册
 - [ ] 药理学
-
